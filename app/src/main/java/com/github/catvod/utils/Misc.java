@@ -127,7 +127,8 @@ public class Misc {
         for (String var : data.split("var")) if (var.contains(param)) return var.split("'")[1];
         return "";
     }
-
+    public static Charset CharsetUTF8 = Charset.forName("UTF-8");
+    public static Charset CharsetIOS8859 = Charset.forName("iso-8859-1");
     public static String MD5(String src) {
         return MD5(src, "UTF-8");
     }
