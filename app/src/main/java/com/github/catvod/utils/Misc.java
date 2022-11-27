@@ -15,7 +15,7 @@ import com.github.catvod.spider.Init;
 
 import org.json.JSONException;
 import org.json.JSONObject;
-
+import java.nio.charset.Charset;
 import java.math.BigInteger;
 import java.security.MessageDigest;
 import java.util.Arrays;
