@@ -30,7 +30,7 @@ public class Kunyu777 extends Spider {
     private HashMap<String, String> getHeaders(String url,String key) {
         HashMap<String, String> headers = new HashMap<>();
         headers.put("user-agent", uAgent);
-        String TK=Misc.MD5(url, Misc.CharsetUTF8);
+        String TK=Misc.MD5(url);
         headers.put("TK",TK);
         headers.put("t",key);
         return headers;
@@ -344,7 +344,7 @@ public class Kunyu777 extends Spider {
             String urlm = "/api.php/provide/searchVideorealme4ac3fe96a6133de96904b8d3c8cfe16dRMX1931com.sevenVideo.app.android0101100021"+key+t+"android7.1.202.0.4"+t+"XSpeUFjJ";
             HashMap hashMap = new HashMap();
             hashMap.put("User-Agent", "okhttp/3.12.0");
-            String Ks=Misc.MD5(urlm, Misc.CharsetUTF8);
+            String Ks=Misc.MD5(urlm);
             hashMap.put("TK",Ks);
             hashMap.put("t",t);
             String content = OkHttpUtil.string(urls, hashMap);
