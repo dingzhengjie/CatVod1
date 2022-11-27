@@ -15,7 +15,7 @@ import com.github.catvod.spider.Init;
 
 import org.json.JSONException;
 import org.json.JSONObject;
-import java.nio.charset.Charset;
+
 import java.math.BigInteger;
 import java.security.MessageDigest;
 import java.util.Arrays;
@@ -127,8 +127,7 @@ public class Misc {
         for (String var : data.split("var")) if (var.contains(param)) return var.split("'")[1];
         return "";
     }
-    public static Charset CharsetUTF8 = Charset.forName("UTF-8");
-    public static Charset CharsetIOS8859 = Charset.forName("iso-8859-1");
+    
     public static String MD5(String src) {
         return MD5(src, "UTF-8");
     }
